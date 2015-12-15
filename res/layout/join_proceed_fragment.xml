@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" >
+
+    
+    
+    <RelativeLayout
+                android:id="@id/rr1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="20dp"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="false"
+                    android:layout_marginTop="10dp"
+                    android:text="Select Community"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/title_text_color" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/autocompleteCommunityName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/textView1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/text_box_bg"
+                    android:cursorVisible="true"
+                    android:ems="10"
+                    android:hint="Community Name"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/title_text_color"
+                    android:textCursorDrawable="@drawable/color_cursor" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/autocompleteAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/autocompleteCommunityName"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/text_box_bg"
+                    android:cursorVisible="true"
+                    android:ems="10"
+                    android:hint="Address"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/title_text_color"
+                    android:textCursorDrawable="@drawable/color_cursor" />
+
+                <Button
+                    android:id="@+id/proceed"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/autocompleteAddress"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_selected"
+                    android:gravity="center"
+                    android:text="Proceed"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/done"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/rr0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/rr2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:visibility="visible" >
+
+                <AutoCompleteTextView
+                    android:id="@+id/editText_block"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/text_box_bg"
+                    android:cursorVisible="true"
+                    android:hint="Block"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/title_text_color"
+                    android:textCursorDrawable="@drawable/color_cursor" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/editText_tower"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/editText_block"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/text_box_bg"
+                    android:cursorVisible="true"
+                    android:hint="Tower"
+                    android:imeOptions="actionDone"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/title_text_color"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:visibility="gone" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/editText_floor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/editText_tower"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/text_box_bg"
+                    android:cursorVisible="true"
+                    android:hint="Floor No"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/title_text_color"
+                    android:textCursorDrawable="@drawable/color_cursor" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/editText_flat"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/editText_floor"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/text_box_bg"
+                    android:cursorVisible="true"
+                    android:hint="Flat No"
+                    android:imeOptions="actionDone"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/title_text_color"
+                    android:textCursorDrawable="@drawable/color_cursor" />
+
+                <TextView
+                    android:id="@+id/residentType"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/editText_flat"
+                    android:layout_marginTop="20dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:text="Resident Type"
+                    android:textColor="@color/title_text_color" />
+
+                <RadioGroup
+                    android:id="@+id/rType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/residentType"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/owner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Owner"
+                        android:textColor="@color/title_text_color" />
+
+                    <RadioButton
+                        android:id="@+id/tenant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tenant"
+                        android:textColor="@color/title_text_color" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/typeFileTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rType"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Type of file"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <RadioGroup
+                    android:id="@+id/fType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/typeFileTxt"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/idProof"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Id Proof"
+                        android:textColor="@color/title_text_color" />
+
+                    <RadioButton
+                        android:id="@+id/addressProof"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Addess Proof"
+                        android:textColor="@color/title_text_color" />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/addIDFile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/dTxt"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/fType"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/addfile"
+                    android:text="Add file"
+                    android:textAlignment="center"
+                    android:textColor="@color/title_text_color" />
+
+                <ImageView
+                    android:id="@+id/dTxt"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/fType"
+                    android:layout_margin="20dp"
+                     />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="false"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_selected"
+        android:gravity="center"
+        android:text="Done"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_medium"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</RelativeLayout>

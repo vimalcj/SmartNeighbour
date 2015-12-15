@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright XYMOB Inc 2013. All rights reserved. -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view_login_screen"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_screen_bg" >
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_login_screen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+
+        <RelativeLayout
+            android:id="@+id/rr1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" 
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/ll1"               
+                android:text="Back"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_medium"
+                android:visibility="visible"
+                android:background="@drawable/button_selected" 
+                android:layout_alignLeft="@+id/ll1"
+                android:textStyle="bold"/>
+            <LinearLayout 
+                android:id="@+id/ll1"
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"></LinearLayout>
+
+            <Button
+                android:id="@+id/button_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@+id/ll1"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/ll1"
+                android:background="@drawable/button_selected"
+                android:gravity="center"
+                android:text="Next"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rr1"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="false"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="25dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/editText_Name"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/text_box_bg"
+                android:cursorVisible="true"
+                android:hint="Name"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textColor="@color/title_text_color"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <EditText
+                android:id="@+id/editText_Email"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/editText_Name"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text_box_bg"
+                android:cursorVisible="true"
+                android:hint="Email"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textColor="@color/title_text_color"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <EditText
+                android:id="@+id/editText_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/editText_Email"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text_box_bg"
+                android:cursorVisible="true"
+                android:hint="Phone number"
+                
+                android:inputType="phone"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textColor="@color/title_text_color"
+                android:textCursorDrawable="@drawable/color_cursor" />
+            
+            <EditText
+                android:id="@+id/editText_dob"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/editText_phone"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text_box_bg"
+                android:cursorVisible="true"
+                android:hint="Date of Birth"             
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textColor="@color/title_text_color"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <TextView
+                android:id="@+id/im"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/editText_dob"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:text="I&apos;m"
+                android:textColor="@color/title_text_color" />
+            <RadioGroup
+                android:id="@+id/sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"                
+                android:orientation="horizontal" 
+                android:layout_below="@id/im"
+                android:layout_marginTop="20dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/Male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Male"
+                    android:textColor="@color/title_text_color" />
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textColor="@color/title_text_color" />
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_center2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel_center"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="false"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="25dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" 
+            android:visibility="visible">
+
+            <EditText
+                android:id="@+id/editText_block"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/text_box_bg"
+                android:cursorVisible="true"
+                android:hint="Block"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textColor="@color/title_text_color"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <EditText
+                android:id="@+id/editText_tower"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/editText_block"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text_box_bg"
+                android:cursorVisible="true"
+                android:hint="Tower"
+                android:imeOptions="actionDone"
+                
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textColor="@color/title_text_color"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <EditText
+                android:id="@+id/editText_floor"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/editText_tower"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text_box_bg"
+                android:cursorVisible="true"
+                android:hint="Floor No"
+                android:imeOptions="actionDone"
+                android:inputType="phone"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textColor="@color/title_text_color"
+                android:textCursorDrawable="@drawable/color_cursor" />
+            
+            <EditText
+                android:id="@+id/editText_flat"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/editText_floor"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text_box_bg"
+                android:cursorVisible="true"
+                android:hint="Flat No"
+                android:imeOptions="actionDone"
+                
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textColor="@color/title_text_color"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <TextView
+                android:id="@+id/residentType"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/editText_flat"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:text="Resident Type"
+                android:textColor="@color/title_text_color" />
+            <RadioGroup
+                android:id="@+id/rType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"                
+                android:orientation="horizontal" 
+                android:layout_below="@id/residentType"
+                android:layout_marginTop="20dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/owner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Owner"
+                    android:textColor="@color/title_text_color" />
+
+                <RadioButton
+                    android:id="@+id/tenant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tenant"
+                    android:textColor="@color/title_text_color" />
+            </RadioGroup>
+
+        </RelativeLayout>
+        
+
+         </RelativeLayout>
+
+</ScrollView>

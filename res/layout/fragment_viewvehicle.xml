@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout_root_view_deals_row"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:background="@android:color/white"
+    android:gravity="left"
+    android:padding="15dp" >
+
+    <RelativeLayout
+        android:id="@+id/ReltiveLayout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#e6e6e6" >
+
+        <TextView
+            android:id="@+id/txtname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="false"
+            android:paddingBottom="7dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:paddingTop="7dp"
+            android:text="Nick Name"
+            android:textColor="@color/title_text_color" />
+
+        <TextView
+            android:id="@+id/vName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtname"
+            android:layout_centerInParent="false"
+            android:background="@android:color/white"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="Honda City"
+            android:textColor="@color/title_text_color" />
+
+        <TextView
+            android:id="@+id/txtVehicleType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vName"
+            android:layout_centerInParent="false"
+            android:paddingBottom="7dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:paddingTop="7dp"
+            android:text="Vehicle Type"
+            android:textColor="@color/title_text_color" />
+
+        <TextView
+            android:id="@+id/vVehicleType"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtVehicleType"
+            android:layout_centerInParent="false"
+            android:background="@android:color/white"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="Four Wheeler"
+            android:textColor="@color/title_text_color" />
+
+        <TextView
+            android:id="@+id/txtRegNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vVehicleType"
+            android:layout_centerInParent="false"
+            android:paddingBottom="7dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:paddingTop="7dp"
+            android:text="Registration Number"
+            android:textColor="@color/title_text_color" />
+
+        <TextView
+            android:id="@+id/vregNo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtRegNo"
+            android:layout_centerInParent="false"
+            android:background="@android:color/white"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="KA 10A 45689"
+            android:textColor="@color/title_text_color" />
+
+        <TextView
+            android:id="@+id/txtMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vregNo"
+            android:layout_centerInParent="false"
+            android:paddingBottom="7dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:paddingTop="7dp"
+            android:text="Maximum Ocuupancy"
+            android:textColor="@color/title_text_color" />
+
+        <TextView
+            android:id="@+id/vMax"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtMax"
+            android:layout_centerInParent="false"
+            android:background="@android:color/white"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="3"
+            android:textColor="@color/title_text_color" />
+
+        <Button
+            android:id="@+id/edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vMax"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/button_selected"
+            android:gravity="center"
+            android:text="Edit"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

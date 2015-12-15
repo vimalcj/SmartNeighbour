@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SMART NEIGHBOUR</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string-array name="navigation_drawer_items_array">
+        <item>Create</item>
+        <item>Read</item>
+        <item>Help</item>
+    </string-array>
+    
+   
+    <string-array name="leftmenus">
+        <item>Journey Share</item>
+        <item>My Contacts</item>              
+        <item>Vehicle Details</item>
+        <item>Near By Offers </item>       
+        <item>Community Classifieds</item>
+        <item>My account</item>
+        <item>Logout</item>
+    </string-array>
+
+    <string name="drawer_open">Open Drawer</string>
+    <string name="drawer_close">Close Drawer</string>
+    <string name="button_joincommunity">Join Community</string>
+    <string name="text_Nojoincommunity">No Communities Joined</string>
+    <string name="Add">Add My Vehicles</string>
+    <string name="View">View My Vehicles</string>
+    <string name="authority_uri">com.smartneighbour.data.provider.DatabaseProvider</string>
+    
+
+</resources>

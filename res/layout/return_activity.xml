@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context=".DropJoinActivity" >
+
+    <fragment
+        android:id="@+id/toolbar_fragment"
+        android:name="com.mycommunityapp.ReturnJouneyFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        tools:layout="@layout/fragment_return_journey" />
+
+    
+         />
+</RelativeLayout>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@id/rr1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/infoTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="User Personal information is empty . "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/title_text_color"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/addinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/infoTxt"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_selected"
+            android:text="Add Details"
+            android:textColor="@android:color/white"
+             />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/done"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/rr2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rr1"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:visibility="visible" >
+
+            <EditText
+                android:id="@+id/editText_FirstName"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/text_box_bg"
+                android:cursorVisible="true"
+                android:hint="First Name"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textColor="@color/title_text_color"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <EditText
+                android:id="@+id/editText_LastName"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/editText_FirstName"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text_box_bg"
+                android:cursorVisible="true"
+                android:hint="Last Name"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textColor="@color/title_text_color"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <Button
+                android:id="@+id/editText_dob"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/editText_LastName"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text_box_bg"
+                android:cursorVisible="true"
+                android:hint="Date of Birth"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:gravity="left"
+                android:textColor="@color/title_text_color"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <TextView
+                android:id="@+id/im"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editText_dob"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="1dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:text="I&apos;m"
+                android:textColor="@color/title_text_color" />
+
+            <RadioGroup
+                android:id="@+id/sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/im"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/Male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Male"
+                    android:textColor="@color/title_text_color" />
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textColor="@color/title_text_color" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/editText_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/sex"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text_box_bg"
+                android:cursorVisible="true"
+                android:hint="Phone number"
+                android:inputType="phone"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textColor="@color/title_text_color"
+                android:textCursorDrawable="@drawable/color_cursor" 
+                android:clickable="true" 
+                android:focusableInTouchMode="true"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/editText_BloodGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/editText_phone"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text_box_bg"
+                android:cursorVisible="true"
+                android:hint="Blood Group"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textColor="@color/title_text_color"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <TextView
+                android:id="@+id/textDon"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editText_BloodGroup"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="1dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:text="Add me on Donor"
+                android:textColor="@color/title_text_color" />
+
+            <RadioGroup
+                android:id="@+id/addDoner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/textDon"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/Yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Yes"
+                    android:textColor="@color/title_text_color" />
+
+                <RadioButton
+                    android:id="@+id/No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="@color/title_text_color" />
+            </RadioGroup>
+        </RelativeLayout>
+    </ScrollView>
+
+    <ToggleButton
+        android:id="@+id/done"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="false"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_selected"
+        android:gravity="center"
+        android:textOff="Save"
+        android:textOn="Edit"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_medium"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

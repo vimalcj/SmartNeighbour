@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/color_background_gray"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <RelativeLayout
+        android:id="@+id/root1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/white_bg"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/textView_store_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/store_icon"
+            android:drawablePadding="5dp"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:text="SAMSUNG double door 300L 1year Old Refrigerator FOR SALE"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/text_size_large"
+            android:paddingTop="3dp" 
+            android:paddingBottom="3dp"/>
+
+        <TextView
+            android:id="@+id/textView_store_phone_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_store_address"
+            android:layout_marginLeft="1dp"
+            android:drawableLeft="@drawable/store_phone"
+            android:drawablePadding="2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="8034567890"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/text_size_mini"
+            android:visibility="visible" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/root2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/white_bg"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/root1" >
+
+        <TextView
+            android:id="@+id/textView_store_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/store_icon"
+            android:drawablePadding="5dp"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:text="Reliance digital TV - India Leading DTH Service with 300 channels and digital doby sound FOR SALE "
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/text_size_large"
+            android:paddingTop="3dp" 
+            android:paddingBottom="3dp"/>
+
+        <TextView
+            android:id="@+id/textView_store_phone_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_store_address"
+            android:layout_marginLeft="1dp"
+            android:drawableLeft="@drawable/store_phone"
+            android:drawablePadding="2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="9032567890"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/text_size_mini"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>

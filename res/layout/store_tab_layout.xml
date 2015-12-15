@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright XYMOB Inc 2013. All rights reserved. -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout_searchbar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_selected"
+    android:paddingBottom="10dp"
+    android:layout_marginTop="1dp" >
+    
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayout_search_textbox_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"       
+        android:layout_toRightOf="@+id/imageButton_storelocation"  
+           
+        android:gravity="center" >
+        <LinearLayout
+            android:id="@+id/search_ic_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true" >
+           <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+           
+             <TextView
+                android:id="@+id/list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"                                              
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"  
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"             
+                android:text="View My Vehicles"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:background="@drawable/map_store_tab" />
+             <TextView android:id="@+id/map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"  
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"  
+                android:text="Add My Vehicles "
+                android:textStyle="bold"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/list_store_tab_second"
+                android:textColor="#ffffff"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

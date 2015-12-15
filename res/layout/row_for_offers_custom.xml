@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright XYMOB Inc 2013. All rights reserved. -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout_root_view_deals_row"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal"
+    android:padding="4dp" >
+
+    <RelativeLayout
+        android:id="@+id/ReltiveLayout_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#e6e6e6" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="3dp"
+        android:background="#d6d6d6" >
+
+        <ImageView
+            android:id="@+id/ImageView_offer_logo"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher" />
+
+        
+
+    </LinearLayout>
+    <TextView
+            android:id="@+id/TextView_offer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center"
+            android:layout_marginLeft="7dp"
+            android:maxLines="2"
+            android:text="Click for offer"
+           
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:layout_toRightOf="@+id/LinearLayout01" 
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+             android:textColor="@color/title_text_color"/>
+
+   
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout01"
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="3dp" >
+
+        <TextView
+            android:id="@+id/TextView_offer_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="Click for offer"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/TextView_coupon_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView_offer_title"
+            android:ellipsize="end"
+            android:gravity="left|bottom"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:text="Instore | Online"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/text_size_mini" />
+
+        <TextView
+            android:id="@+id/TextView_expires_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/TextView_offer_title"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/TextView_coupon_type"
+            android:ellipsize="end"
+            android:gravity="right|bottom"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:text="Expires on 60 Days"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/text_size_mini" />
+
+        <ImageView
+            android:id="@+id/ImageView_fav_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="false"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:visibility="invisible" >
+        </ImageView>
+    </RelativeLayout>
+
+   
+</RelativeLayout>
+   
+
+</RelativeLayout>
